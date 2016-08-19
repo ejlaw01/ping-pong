@@ -26,7 +26,10 @@ _Default_
 
 ## BDD
 
-* The program can count up by ones to a number.
+* The program will display the number a user submits.
+  * Input: 7
+  * Output: 7
+* The program can count up by ones to that number.
   * Input: 3
   * Output: [1, 2, 3]
 * It can put each number in the count into an unordered list.
@@ -41,3 +44,9 @@ _Default_
 * It can replace certain numbers with words.
   * Input: 3
   * Output: 1   2   ping
+* It will clear fields so that user can reuse the software without refreshing page.
+  * 5, and then 3
+  * 1     2     ping
+* It will alert user to inappropriate types of input.
+  * Input: -3
+  * Output: Please enter a positive integer
