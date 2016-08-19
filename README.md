@@ -22,7 +22,7 @@ _HTML, CSS, Bootstrap, JavaScript and jQuery_
 
 ### License
 
-_Default_
+_MIT, Copyright 2016, Ethan Law_
 
 ## BDD
 
