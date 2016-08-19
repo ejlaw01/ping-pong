@@ -14,7 +14,7 @@ _This website will take a user-given number and return a list of numbers countin
 * _Run on a web browser_
 * _View_
 
-_or just click [here](ejlaw01.github.io/ping-pong)_
+_or just click [here](https://ejlaw01.github.io/ping-pong/)_
 
 ### Technologies used
 
