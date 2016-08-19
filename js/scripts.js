@@ -28,7 +28,7 @@ $(document).ready(function(){
     }
     pingPongifier(userInput);
     var outputStyle1 = pingPongified.forEach(function(input){
-      $("#output ul").append("<li>" + input + "</li>");
+      $("#view1 ul").append("<li>" + input + "</li>");
     });
     var outputStyle2 = function(input) {
       for (var i=0; i < input.length; i++) {
@@ -44,7 +44,8 @@ $(document).ready(function(){
     outputStyle2(pingPongified);
     $("#input").val("");
   });
-  $("button#view").click(function(){
-    $(".row").show();
+  $("#viewToggle").click(function() {
+    $("#view2").toggle();
+    $("#view1").toggle();
   });
 });

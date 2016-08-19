@@ -24,6 +24,12 @@ ul {
   float: right;
 }
 
-.row {
-  /*display: none;*/
+#view1 {
+  display: block;
+  clear: both;
+}
+
+#view2 {
+  display: none;
+  clear: both;
 }
