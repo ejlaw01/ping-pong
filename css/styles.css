@@ -1,7 +1,29 @@
-h1{
+h1 {
   text-align: center;
+  font-family: 'Roboto Slab', serif;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.ping {
-  color: red;
+ul, label {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  clear: both;
+}
+
+ul {
+  padding-top: 30px;
+}
+
+.btn-success {
+  float:left;
+}
+
+.btn-primary {
+  float: right;
+}
+
+.row {
+  /*display: none;*/
 }

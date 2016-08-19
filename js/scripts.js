@@ -19,7 +19,7 @@ var pingPongifier = function(input) {
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    $("#output ul").empty();
+    $("ul").empty();
     $(".form-group").removeClass("has-error");
     var userInput = parseInt($("input#number").val());
     if (userInput <= 0) {
@@ -27,9 +27,24 @@ $(document).ready(function(){
       $(".form-group").addClass("has-error");
     }
     pingPongifier(userInput);
-    var outputArray = pingPongified.forEach(function(input){
+    var outputStyle1 = pingPongified.forEach(function(input){
       $("#output ul").append("<li>" + input + "</li>");
     });
+    var outputStyle2 = function(input) {
+      for (var i=0; i < input.length; i++) {
+        if ((i+1)%3 === 0) {
+          $("#column3 ul").append("<li>" + input[i] + "</li>");
+        } else if ((i+2)%3 === 0) {
+          $("#column2 ul").append("<li>" + input[i] + "</li>");
+        } else if (i%3 === 0){
+          $("#column1 ul").append("<li>" + input[i] + "</li>");
+        }
+      }
+    }
+    outputStyle2(pingPongified);
     $("#input").val("");
+  });
+  $("button#view").click(function(){
+    $(".row").show();
   });
 });
